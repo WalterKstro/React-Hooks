@@ -1,17 +1,26 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import fetchAPI from "../helpers/fetchAPI"
 
 const useFetch = (url) => {
     const [state, setState] = useState({data: null,loading: true})
+    const isMounted = useRef(true)
 
+    useEffect(() => {
+        return ()=> {
+            isMounted.current = false
+        }
+    },[])
+    
     useEffect(() => {
         setState({data: null,loading: true})
         
         fetchAPI(url).then(data => {
-            setState({
-                data,
-                loading: false
-            })
+            if(isMounted.current) {
+                setState({
+                    data,
+                    loading: false
+                })            
+            }
         })
 
     },[url])

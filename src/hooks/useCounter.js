@@ -8,7 +8,7 @@ const useCounter = (initialState = 0) => {
         setState( state + 1 )
     }
     const decrement = () => {
-        setState( state - 1 )
+        state === 1 ? setState( initialState ) : setState( state - 1 )
     }
     const reset = () => {
         setState( initialState )
