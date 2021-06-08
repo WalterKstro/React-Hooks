@@ -12,8 +12,7 @@ const useFetch = (url) => {
     },[])
     
     useEffect(() => {
-        setState({data: null,loading: true})
-        
+    
         fetchAPI(url).then(data => {
             if(isMounted.current) {
                 setState({

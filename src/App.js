@@ -4,11 +4,12 @@
 // import FormWithCustomHook from "./components/useEffect/FormWithCustomHook"
 // import ExampleStateEffect from './components/examples/ExampleStateEffect'
 // import Referentation from './components/useRef/Referentation'
-import RealExample from './components/useRef/RealExample'
+// import RealExample from './components/useRef/RealExample'
+import LayoutEffect from './components/useLayoutEffect/LayoutEffect'
 const App = () => {
     return (
         <div className="container">
-           <RealExample/>
+           <LayoutEffect/>
         </div>
     )
 }
