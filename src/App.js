@@ -7,11 +7,12 @@
 // import RealExample from './components/useRef/RealExample'
 // import LayoutEffect from './components/useLayoutEffect/LayoutEffect'
 // import Memo from './components/memo/Memo'
-import MemoHook from './components/memo/MemoHook'
+// import MemoHook from './components/memo/MemoHook'
+import UseCallback from './components/useCallback/UseCallback'
 const App = () => {
     return (
         <div className="container">
-           <MemoHook/>
+           <UseCallback/>
         </div>
     )
 }
