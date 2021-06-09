@@ -5,11 +5,13 @@
 // import ExampleStateEffect from './components/examples/ExampleStateEffect'
 // import Referentation from './components/useRef/Referentation'
 // import RealExample from './components/useRef/RealExample'
-import LayoutEffect from './components/useLayoutEffect/LayoutEffect'
+// import LayoutEffect from './components/useLayoutEffect/LayoutEffect'
+// import Memo from './components/memo/Memo'
+import MemoHook from './components/memo/MemoHook'
 const App = () => {
     return (
         <div className="container">
-           <LayoutEffect/>
+           <MemoHook/>
         </div>
     )
 }
