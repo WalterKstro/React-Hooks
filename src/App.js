@@ -8,11 +8,12 @@
 // import LayoutEffect from './components/useLayoutEffect/LayoutEffect'
 // import Memo from './components/memo/Memo'
 // import MemoHook from './components/memo/MemoHook'
-import UseCallback from './components/useCallback/UseCallback'
+// import UseCallback from './components/useCallback/UseCallback'
+import { Padre } from './components/tarea-memo/Padre'
 const App = () => {
     return (
         <div className="container">
-           <UseCallback/>
+           <Padre/>
         </div>
     )
 }
