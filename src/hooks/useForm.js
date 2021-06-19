@@ -12,10 +12,14 @@ const useForm = (initialState = {}) => {
             [target.name]: target.value
         })
     }
+    const handleReset = () => {
+        setState(initialState)
+    }
 
     return {
         state,
-        handleChangeInput
+        handleChangeInput,
+        handleReset
     }
 }
 
