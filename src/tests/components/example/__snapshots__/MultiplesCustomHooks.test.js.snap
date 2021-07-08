@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing multiple custom hooks in component <MultiplesCustomHooks/> should mach with the snapshot 1`] = `
+<div
+  className="p-3"
+>
+  <h2
+    className="my-3 text-center"
+  >
+    Breaking Bad
+  </h2>
+  <LoadingWait />
+  <div
+    className="d-grid gap-2 d-md-flex justify-content-md-end"
+  >
+    <button
+      className="font-weight btn btn-primary me-md-2"
+      onClick={[Function]}
+      type="button"
+    >
+      «
+    </button>
+    <button
+      className="font-weight btn btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      »
+    </button>
+  </div>
+</div>
+`;

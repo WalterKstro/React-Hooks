@@ -4,7 +4,7 @@ import LoadingError from "../loading/LoadingError"
 import LoadingWait from "../loading/LoadingWait"
 import Quote from "../quote/Quote"
 
-const ExampleStateEffect = () => {
+const MultiplesCustomHooks = () => {
     const {counter, increment, decrement} = useCounter(1)
     const state = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`)
     const {data, loading } = state
@@ -17,7 +17,7 @@ const ExampleStateEffect = () => {
                 loading ? 
                 <LoadingWait/>
                 :
-                author !== '' ? <Quote author={author} quote={quote}/> : <LoadingError/>
+                <Quote author={author} quote={quote}/>
             }
             <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button className="font-weight btn btn-primary me-md-2" type="button" onClick={decrement}>&laquo;</button>
@@ -27,4 +27,4 @@ const ExampleStateEffect = () => {
     )
 }
 
-export default ExampleStateEffect
+export default MultiplesCustomHooks
