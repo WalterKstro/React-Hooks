@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing component <RealExample/> should show a snaptshot of component <RealExample/> 1`] = `
+<Fragment>
+  <MultiplesCustomHooks />
+  <hr />
+  <Switcher
+    handleToogle={[Function]}
+  />
+</Fragment>
+`;

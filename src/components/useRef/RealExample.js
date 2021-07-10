@@ -1,4 +1,4 @@
-import ExampleStateEffect from '../examples/ExampleStateEffect'
+import MultiplesCustomHooks from '../examples/MultiplesCustomHooks'
 import useToogle from '../../hooks/useToogle'
 
 import Switcher from '../Switch/Switcher'
@@ -7,7 +7,7 @@ const RealExample = () => {
     const {state, handleToogle} = useToogle()
     return (
         <>
-         { state && <ExampleStateEffect/>}
+         { state && <MultiplesCustomHooks/>}
           <hr/>
           <Switcher handleToogle={handleToogle}/>
         </>
