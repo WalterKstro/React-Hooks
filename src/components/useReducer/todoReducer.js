@@ -1,5 +1,5 @@
 
-const todoReducer = (state=[], {type,payload}) => {
+const todoReducer = (state=[],{type,payload}) => {
     switch (type) {
         case 'add': {
             return [...state, payload]
