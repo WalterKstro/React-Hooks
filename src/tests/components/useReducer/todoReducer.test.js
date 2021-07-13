@@ -20,5 +20,33 @@ describe('Testing reducer todoReducer', () => {
         expect(stateTodo.length).toBe(3)
         expect(stateTodo).toEqual([...state, payload.payload])
     })
+
+
+    test('should delete one todo', () => {
+        const payload = {
+            type:'delete',
+            payload: 56884684698465
+        }
+
+        const stateTodo = todoReducer(state,payload)
+
+        expect(stateTodo.length).toBe(1)
+        expect(stateTodo.indexOf(payload.payload)).toBe(-1)
+    })
+
+    test('should change the state of one todo', () => {
+        const payload = {
+            type:'toogle',
+            payload: 91254684698465
+        }
+
+        const stateTodo = todoReducer(state,payload)
+        const existElement = stateTodo.find(element => element.id === payload.payload)
+        
+        const {state:stateElement} = existElement
+        expect(stateElement).toBe(true)
+    })
+    
+    
     
 })

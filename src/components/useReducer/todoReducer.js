@@ -11,7 +11,7 @@ const todoReducer = (state=[],{type,payload}) => {
             return copyState
         }
         case 'toogle': {
-            return state.map( todo =>  todo.id === payload ? {...todo, state: !todo.state} : todo )
+            return state.map( todo =>  (todo.id === payload) ? {...todo, state: !todo.state} : todo )
         }
         default:
             return state
