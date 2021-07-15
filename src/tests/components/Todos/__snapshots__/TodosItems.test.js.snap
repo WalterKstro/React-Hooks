@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing component <TodosItems/> in dir Todos should create a snapshots of component <TodosItems/> 1`] = `
+<li
+  className="false fw-bold list-group-item d-flex justify-content-between"
+  key="56884684698465"
+  onClick={[Function]}
+>
+  Aprender React
+  <button
+    className="btn btn-sm"
+    onClick={[Function]}
+  >
+    🗑️
+  </button>
+</li>
+`;
