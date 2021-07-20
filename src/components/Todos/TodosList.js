@@ -8,6 +8,7 @@ const TodosList = ({todos, handleToogle, handleDelete}) => {
                 todos.map((todo) =>(
                     <TodosItems
                         todo={todo}
+                        key={todo.id}
                         handleToogle={handleToogle}
                         handleDelete={handleDelete}
                     />

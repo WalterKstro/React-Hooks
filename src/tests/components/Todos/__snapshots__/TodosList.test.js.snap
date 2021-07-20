@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the component <TodosList/> should show correctly the component <TodosList/> 1`] = `
+<ol
+  className="list-group list-group-numbered"
+>
+  <TodosItems
+    handleDelete={[MockFunction]}
+    handleToogle={[MockFunction]}
+    key="56884684698465"
+    todo={
+      Object {
+        "id": 56884684698465,
+        "state": false,
+        "task": "Aprender React",
+      }
+    }
+  />
+  <TodosItems
+    handleDelete={[MockFunction]}
+    handleToogle={[MockFunction]}
+    key="91254684698465"
+    todo={
+      Object {
+        "id": 91254684698465,
+        "state": false,
+        "task": "Aprender Vuejs",
+      }
+    }
+  />
+</ol>
+`;
