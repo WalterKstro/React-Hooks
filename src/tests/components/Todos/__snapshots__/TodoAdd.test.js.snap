@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in componente <TodoAdd/> should show correctly the component 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    className="form-control mb-3"
+    name="task"
+    onChange={[Function]}
+    placeholder="Quiero aprender ..."
+    type="text"
+    value=""
+  />
+</form>
+`;
