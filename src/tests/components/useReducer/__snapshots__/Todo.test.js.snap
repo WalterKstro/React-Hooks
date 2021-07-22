@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing component <Todo/> should show correctly the component <Todo/> 1`] = `
+Array [
+  <h2
+    className="text-center my-5"
+  >
+    Todos App (
+    0
+    )
+  </h2>,
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="form-control mb-3"
+      name="task"
+      onChange={[Function]}
+      placeholder="Quiero aprender ..."
+      type="text"
+      value=""
+    />
+  </form>,
+  <ol
+    className="list-group list-group-numbered"
+  />,
+]
+`;

@@ -42,7 +42,7 @@ const Todo = () => {
 
     return (
         <>
-         <h2 className="text-center my-5">Todos App ({todos.length}) </h2>
+         <h2 className="text-center my-5">Todos App ({todos.length})</h2>
          
          <TodoAdd handleAdd={handleAdd}/>
          
