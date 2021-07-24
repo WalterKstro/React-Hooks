@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in component <LoginPage/> should show correctly the component <LoginPage/> 1`] = `
+<div>
+  <h1>
+    Login Page
+  </h1>
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+  >
+    Login
+  </button>
+</div>
+`;
